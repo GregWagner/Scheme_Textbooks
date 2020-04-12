@@ -1,0 +1,8 @@
+(require (planet dyoo/simply-scheme:1:2/simply-scheme))
+
+(define (acronym phrase)
+  (accumulate word (every first phrase)))
+
+(acronym '(american civil liberties union))
+(acronym '(reduced instruction set computer))
+(acronym '(quod erat demonstrandum))
